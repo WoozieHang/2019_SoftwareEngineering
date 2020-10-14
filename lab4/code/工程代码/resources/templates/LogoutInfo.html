@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>身份失效提醒</title>
+    <link rel="stylesheet" type="text/css" href="/css/common.css" />
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: url(/picture/bg2.jpg) no-repeat;
+            background-size: cover;
+            position: absolute;
+            overflow: hidden;  /* auto,scroll */
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+
+<form th:action="@{/back}" method="post" style="position:absolute;margin-left:35%;margin-top:15%;width:500px;height:150px;">
+    <div>
+        <span id="basic-addon1" style="color:red;postion:absolute;margin-left:0%;margin-top:0%;width:0px;height: 20px;font-size: 65px;">身份已经失效了!</span>
+    </div>
+</form>
+
+</body>
+</html>
